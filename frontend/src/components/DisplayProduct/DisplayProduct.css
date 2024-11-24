@@ -1,0 +1,94 @@
+/* Conteneur principal */
+.product-details {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 100px 100px, 200pxf;
+    grid-template-rows: 1fr,1fr,1fr;
+    align-items: flex-start;
+    gap: 2rem;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Image produit */
+  .product-details img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Informations produit */
+  .product-details div {
+    flex: 1;
+  }
+  
+  /* Titre */
+  .product-details h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+  
+  /* Texte */
+  .product-details p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  /* Prix */
+  .product-details p:nth-child(3) {
+    font-size: 1.5rem;
+    color: #2575fc;
+    font-weight: bold;
+  }
+  
+  /* Bouton Ajouter au Panier */
+  .product-details button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Effet hover sur le bouton */
+  .product-details button:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-details {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .product-details img {
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .product-details div {
+      width: 100%;
+    }
+  
+    .product-details button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
